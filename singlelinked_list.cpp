@@ -10,15 +10,12 @@ struct Node
         next=NULL;
     }
 };
-struct Node *head=NULL;
-int Get_new_node(int new_data)
-{
-    
-}
+struct Node *head=NULL;//global dclaration
+
 void insert_begin(int data)
 {
-    struct Node *new_node=Get_new_Node(data);
-    //struct
+    struct Node *new_node=new Node(data);
+
     if(head==NULL)
     {
         head=new_node;
